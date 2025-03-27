@@ -6,8 +6,8 @@ namespace Course1._0
     {
         static void Main()
         {
-            Pessoa P1 = new Pessoa("Kleber", 1234, 500.00m);
-            Pessoa P2 = new Pessoa("Sofia", 4321, 1000.00m);
+            Pessoa P1 = new Pessoa("Kleber", 1234, 500.00);
+            Pessoa P2 = new Pessoa("Sofia", 4321, 1000.00);
             Pessoa usuario = null;
 
             Console.Write("Já possui conta? (s)sim ou (n)não: ");
@@ -28,7 +28,7 @@ namespace Course1._0
                 string nome = Console.ReadLine();
                 Console.Write("Crie um PIN: ");
                 int pin = int.Parse(Console.ReadLine());
-                usuario = new Pessoa(nome, pin, 0.00m);
+                usuario = new Pessoa(nome, pin, 0.0);
             }
 
             if (usuario != null)

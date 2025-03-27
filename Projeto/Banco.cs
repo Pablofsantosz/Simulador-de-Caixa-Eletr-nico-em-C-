@@ -51,7 +51,7 @@ namespace Course1._0{
         private void Depositar()
         {
             Console.Write("Digite o valor para depósito: ");
-            if (decimal.TryParse(Console.ReadLine(),CultureInfo.InvariantCulture, out decimal valor) && valor > 0)
+            if (double.TryParse(Console.ReadLine(),CultureInfo.InvariantCulture, out double valor) && valor > 0)
             {
                 usuario.Saldo += valor;
                 Console.WriteLine("Depósito realizado com sucesso!");
@@ -66,7 +66,7 @@ namespace Course1._0{
         private void Sacar()
         {
             Console.Write("Digite o valor para saque: ");
-            if (decimal.TryParse(Console.ReadLine(), out decimal valor) && valor > 0 && valor <= usuario.Saldo)
+            if (double.TryParse(Console.ReadLine(), out double valor) && valor > 0 && valor <= usuario.Saldo)
             {
                 usuario.Saldo -= valor;
                 Console.WriteLine("Saque realizado com sucesso!");

@@ -4,9 +4,9 @@ namespace Course1._0
     {
         public string Nome { get; set; }
         public int Pin { get; set; }
-        public decimal Saldo { get; set; }
+        public double Saldo { get; set; }
 
-        public Pessoa(string nome, int pin, decimal saldoInicial)
+        public Pessoa(string nome, int pin, double saldoInicial)
         {
             Nome = nome;
             Pin = pin;
