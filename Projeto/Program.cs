@@ -8,7 +8,7 @@ namespace Course1._0
         {
             Pessoa P1 = new Pessoa("Kleber", 1234, 500.00);
             Pessoa P2 = new Pessoa("Sofia", 4321, 1000.00);
-            Pessoa usuario = null;
+            Pessoa usuario =  new Pessoa() ;
 
             Console.Write("Já possui conta? (s)sim ou (n)não: ");
             char aux = char.Parse(Console.ReadLine().ToLower());
@@ -28,7 +28,7 @@ namespace Course1._0
                 string nome = Console.ReadLine();
                 Console.Write("Crie um PIN: ");
                 int pin = int.Parse(Console.ReadLine());
-                usuario = new Pessoa(nome, pin, 0.0);
+                usuario = new Pessoa(nome, pin, 0.00);
             }
 
             if (usuario != null)
